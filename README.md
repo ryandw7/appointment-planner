@@ -6,7 +6,7 @@ In this project, you will use functional React components to create an app that 
 
 You will work with stateful and stateless functional React components using hooks. The requirements section will walk through implementing the app from the topmost component down. If you would like to implement it in a different order, feel free to do what is comfortable for you.
 
-### Step 1
+### Step 1 COMPLETED
 
 The application code starts with App.js, ContactsPage.js, and AppointmentsPage.js. These are the three stateful components you will work with in this project. App.js is located in the /src directory in the file explorer and should already be open in the code editor.
 
