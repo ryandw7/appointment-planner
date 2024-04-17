@@ -10,7 +10,11 @@ export const ContactForm = ({
   handleSubmit
 }) => {
   return (
-    <></>
+    <>
+    <form onSubmit={handleSubmit}>
+        <input name="name" onChange={setName((prev) => return)}
+    </form>
+    </>
   );
 };
 
