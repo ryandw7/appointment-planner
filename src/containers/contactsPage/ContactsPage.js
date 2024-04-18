@@ -3,7 +3,7 @@ import { ContactForm } from "../../components/contactForm/ContactForm";
 import { TileList } from "../../components/tileList/TileList";
 
 
-export const ContactsPage = ({contacts, addContact}) => {
+export const ContactsPage = ({contacts, setContact}) => {
 
   //Define state variables for contact info and duplicate check
   const [name, setName] = useState();
@@ -15,7 +15,7 @@ export const ContactsPage = ({contacts, addContact}) => {
   const handleSubmit = (e) => {
    e.preventDefault();
     if(!isDuplicate){ 
-      addContact(name, phone, email);
+      setContact(name, phone, email);
       setName('');
       setPhone('');
       setEmail('');
@@ -25,7 +25,10 @@ export const ContactsPage = ({contacts, addContact}) => {
     let arr = contacts;
     for(const contact in arr){
            if(name === arr[contact].name){
-            setIsDuplicate(true)
+            setIsDuplicate(true);
+            console.log('Name already entered')
+           }else{
+            setIsDuplicate(false)
            }
     }
   }, [name])
@@ -40,7 +43,7 @@ export const ContactsPage = ({contacts, addContact}) => {
       <hr />
       <section>
         <h2>Contacts</h2>
-        <TileList contacts={contacts} />
+        <TileList list={contacts} />
       </section>
     </div>
   );

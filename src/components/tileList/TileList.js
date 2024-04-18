@@ -1,9 +1,10 @@
 import React from "react";
-
-export const TileList = () => {
+import {Tile} from '../tile/Tile.js'
+export const TileList = ({list}) => {
+  console.log('Tile List mounted')
   return (
-    <div>
-      
-    </div>
+    <>
+   {list.map((item) => <Tile listObj={item} key={item.name}/>)}
+   </>
   );
 };

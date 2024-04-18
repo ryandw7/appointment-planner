@@ -28,7 +28,7 @@ Pass the array of contacts and the appropriate callback function as props to the
 
 Pass the appointments array, contacts array, and the add appointment function as props to the AppointmentsPage component
 
-### Step 2
+### Step 2 COMPLETED
 
 ContactsPage.js is located in the /src/containers/contactsPage directory in the file explorer and should already be open in the code editor.
 
@@ -55,7 +55,7 @@ handleSubmit callback function
 
 In the Contacts section, render a TileList with the contact array passed via props
 
-### Step 3
+### Step 3 COMPLETED
 ContactForm.js is located in the /src/components/contactForm directory in the file explorer and should already be open in the code editor.
 
 Based on the given requirements, implement ContactForm as a stateless component that renders a web form to collect the necessary contact information.
@@ -71,7 +71,7 @@ A submit button
 
 Include a pattern attribute to the phone <input> with a regex that matches the phone locale of your preference
 
-### Step 4
+### Step 4 COMPLETED
 Open the TileList.js file located in the /src/components/tileList directory.
 
 Based on the given requirements, implement TileList as a stateless component that renders a list of Tile components using an array of objects.
@@ -85,7 +85,7 @@ Use the array passed via props to iteratively render Tile components, using each
 
 The requirements for the TileList component are generalized and allow it to be shared by the ContactsPage and AppointmentsPage components. As long as an array of objects with either the contact data or appointments data is passed then the content will be handled appropriately.
 
-### Step 5
+### Step 5 COMPLETED
 Open the Tile.js file located in the /src/components/tile directory.
 
 Based on the given requirements, implement Tile as a stateless component that renders the data from an object.
